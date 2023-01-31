@@ -1,0 +1,17 @@
+<h1>Job openings in the MCU</h1>
+<ul>
+  <% 
+    # Loop through the array of job openings
+    [      
+        { company: "Stark Enterprises", position: "Ruby Developer", location: "St. Louis, MO" },
+        { company: "WayneEnterprises", position: "Ruby on Rails Engineer", location: "Kansas City, MO" },      
+        { company: "OsCorp", position: "Full Stack Ruby Developer", location: "Springfield, MO" },       
+        { company: "Hydra", position: "Ruby Engineer", location: "Columbia, MO" },      
+        { company: "S.H.I.E.L.D.", position: "Ruby on Rails Developer", location: "St. Joseph, MO" },    
+    ].map do |opening| %>
+    <li>
+        <%# Render the company and position for each opening %>
+        <%= opening[:company] %> - <%= opening[:position] %>
+    </li>
+  <% end %>
+</ul>

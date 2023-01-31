@@ -16,6 +16,18 @@ Rails.application.routes.draw do
     get 'testimonials',     to: 'sitemap#testimonials'
     get 'blog',             to: 'sitemap#blog'
 
+
+    # get 'rating',                     to: 'survay#rating'
+    # get 'multiple-choice-questions',  to: 'survay#multiple_choice_questions'
+    # get 'open-ended-feedback',        to: 'survay#open_ended_feedback'
+
+    # namespace :survey do
+      get 'rating', to: 'survey#rating'
+      get 'multiple-choice-questions', to: 'survey#multiple_choice_questions'
+      get 'open-ended-feedback', to: 'survey#open_ended_feedback'
+      get 'end', to: 'survey#end'
+
+# end
 end
 
 # .html.erb

@@ -1,0 +1,77 @@
+<nav class="navbar navbar-expand-lg bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="<%= root_path %>">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+      
+       
+        <li class="nav-item">    
+            <a class="nav-link active" href="<%= homepage_path %>" aria-current="page">
+                Homepage
+            </a>                      
+        </li>
+
+        <li class="nav-item">    
+            <a class="nav-link active" href="<%= about_us_path %>" aria-current="page">
+                About Us
+            </a>                      
+        </li>
+
+        <li class="nav-item">    
+            <a class="nav-link active" href="<%= contact_us_path %>" aria-current="page">
+                Contact Us
+            </a>                      
+        </li>
+
+        <li class="nav-item">    
+            <a class="nav-link active" href="<%= faq_path %>" aria-current="page">
+                FAQ
+            </a>                      
+        </li>
+
+        <li class="nav-item">    
+            <a class="nav-link active" href="<%= terms_of_service_path %>" aria-current="page">
+                Terms Of Service
+            </a>                      
+        </li>
+        <li class="nav-item">    
+            <a class="nav-link active" href="<%= privacy_policy_path %>" aria-current="page">
+                Privacy Policy
+            </a>                      
+        </li>
+
+        <li class="nav-item">    
+            <a class="nav-link active" href="<%= course_catalog_path %>" aria-current="page">
+                Course Catalog
+            </a>                      
+        </li>
+
+        <li class="nav-item">    
+            <a class="nav-link active" href="<%= testimonials_path %>" aria-current="page">
+                Testimonials
+            </a>                      
+        </li>
+
+        <li class="nav-item">    
+            <a class="nav-link active" href="<%= blog_path %>" aria-current="page">
+                Blog
+            </a>                      
+        </li>
+       
+       
+        
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+   <%#
+ 
+    get 'course-catalog',   to: 'sitemap#course_catalog'
+    get 'testimonials',     to: 'sitemap#testimonials'
+    get 'blog',             to: 'sitemap#blog' 
+%>
